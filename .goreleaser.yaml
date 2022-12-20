@@ -13,6 +13,17 @@ builds:
       - linux
       - windows
       - darwin
+nfpms:
+  - package_name: shagen
+    homepage: https://github.com/krharsh17/shagen/
+    maintainer: Kumar Harsh <kharsh39@gmail.com>
+    description: |-
+      Shagen installer package. CLI application to generate SHA256 hashes of texts.
+    formats:
+      - rpm
+      - deb
+sboms:
+  - artifacts: archive
 archives:
   - replacements:
       darwin: Darwin
